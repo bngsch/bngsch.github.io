@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>My Sandbox Blog</h1>
+			<p>
+				Welcome to my blog. I have been taking a career break studying recent developments in data science and generative AI. While I learn a lot every day, it is easy to forget the finer details. To stop this knowledge drain, I decided to start jotting down my thoughts here, with the long-term plan of compiling them into a digital book. In the meantime, I realized these raw thoughts might be helpful to others, so I wanted to share them. I hope you enjoy it!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
